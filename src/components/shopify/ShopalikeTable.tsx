@@ -22,7 +22,7 @@ const ShopalikeTable: React.FC<ShopalikeTableProps> = ({
   }
 
   return (
-    <div className='block w-full border rounded-lg shadow-sm overflow-x-auto border-stone-200'>
+    <div className='block w-full border rounded-xl shadow-sm overflow-x-auto border-stone-200'>
       <table className='w-full'>
 
         {/* -- Create the header -- */}
