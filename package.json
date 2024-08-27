@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "build": "tsc && tailwindcss -i ./src/styles/tailwind.css -o ./dist/styles.css --minify",
+    "build:watch": "concurrently \"npm run build\" \"chokidar 'src/**/*.ts' 'src/**/*.tsx' -c 'npm run build'\"",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -13,6 +14,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@shopify/polaris": "^13.9.0",
     "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
     "autoprefixer": "^10.4.20",
@@ -40,6 +42,8 @@
     "@storybook/react-webpack5": "^8.2.9",
     "@storybook/test": "^8.2.9",
     "babel-loader": "^9.1.3",
+    "chokidar-cli": "^3.0.0",
+    "concurrently": "^8.2.2",
     "mini-css-extract-plugin": "^2.9.1",
     "storybook": "^8.2.9",
     "ts-loader": "^9.5.1",
