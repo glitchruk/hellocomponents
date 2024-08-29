@@ -6,6 +6,13 @@ const meta = {
     component: ShopalikeTable,
     parameters: {
         layout: 'padded',
+        backgrounds: {
+            default: 'polaris',
+            values: [
+                { name: 'polaris', value: '#fafafa' },
+                { name: 'dark', value: '#000000' },
+            ],
+        },
     },
     tags: ['autodocs'],
 } satisfies Meta<typeof ShopalikeTable>;

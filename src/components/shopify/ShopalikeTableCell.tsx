@@ -11,7 +11,7 @@ const ShopalikeTableCell: React.FC<ShopalikeTableCellProps> = ({
     first = false,
     showDivider = true,
 }) => {
-    let className = 'pr-4 h-9 text-left text-sm text-nowrap font-normal text-stone-800 border-stone-200';
+    let className = 'pr-4 h-9 text-left text-sm text-nowrap font-normal text-neutral-900 border-neutral-200';
     if (first || showDivider) {
         className += ' pl-4';
     }

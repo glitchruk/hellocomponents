@@ -5,7 +5,7 @@ import { Checkbox } from '@shopify/polaris';
 
 interface ShopalikeTableProps {
   headings: string[];
-  data: any[][];
+  data: object[];
   showDividers?: boolean;
   selectable?: boolean;
 }
@@ -16,13 +16,13 @@ const ShopalikeTable: React.FC<ShopalikeTableProps> = ({
   showDividers = false,
   selectable = false,
 }) => {
-  let checkClassName = 'w-10 h-9 text-center align-middle px-2 bg-stone-100';
+  let checkClassName = 'w-10 h-9 text-center align-middle px-2 bg-zinc-100';
   if (showDividers) {
       checkClassName += ' border-r border-stone-200';
   }
 
   return (
-    <div className='block w-full border rounded-xl shadow-sm overflow-x-auto border-stone-200'>
+    <div className='block w-full border rounded-xl shadow-sm overflow-x-auto border-neutral-200'>
       <table className='w-full'>
 
         {/* -- Create the header -- */}

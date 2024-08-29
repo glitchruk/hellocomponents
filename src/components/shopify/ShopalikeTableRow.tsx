@@ -13,10 +13,10 @@ const ShopalikeTableRow: React.FC<ShopalikeTableRowProps> = ({
     selectable = false,
     showDividers = false,
 }) => {
-    let className = 'bg-white hover:bg-stone-100 border-b border-stone-200 last:border-b-0';
-    let checkClassName = 'w-10 h-9 text-center align-middle px-2';
+    let className = 'h-9 bg-white hover:bg-neutral-100 border-b border-neutral-200 last:border-b-0';
+    let checkClassName = 'text-center align-middle px-2';
     if (showDividers) {
-        checkClassName += ' border-r border-stone-200';
+        checkClassName += ' border-r border-neutral-200';
     }
 
     return (
